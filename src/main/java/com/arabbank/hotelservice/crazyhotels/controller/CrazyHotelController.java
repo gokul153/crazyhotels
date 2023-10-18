@@ -1,5 +1,6 @@
 package com.arabbank.hotelservice.crazyhotels.controller;
 
+import com.arabbank.hotelservice.crazyhotels.exception.NameNotAddedException;
 import com.arabbank.hotelservice.crazyhotels.model.entity.dto.NewEntryDto;
 import com.arabbank.hotelservice.crazyhotels.model.entity.dto.RequestDto;
 import com.arabbank.hotelservice.crazyhotels.model.entity.dto.ResponseDto;
@@ -17,7 +18,7 @@ public class CrazyHotelController {
     private CrazyHotelService crazyHotelService;
 
     @PostMapping("/newentry")
-    public String createNewEntry(@RequestBody NewEntryDto newEntryDto){
+    public String createNewEntry(@RequestBody NewEntryDto newEntryDto) throws NameNotAddedException {
         return crazyHotelService.createNewEntry(newEntryDto);
 
     }
@@ -31,5 +32,10 @@ public class CrazyHotelController {
            requestDto.setFromDate(fromDate);
            return crazyHotelService.searchByRequest(requestDto);
     }
+//    @PutMapping("/hotel")
+//    public String update_entry(@RequestParam String name,@RequestParam Double amount) {
+//
+//        return crazyHotelService.updateByRname(name,amount);
+//    }
 
 }

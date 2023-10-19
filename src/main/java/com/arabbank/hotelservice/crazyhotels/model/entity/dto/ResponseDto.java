@@ -9,9 +9,9 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ResponseDto {
-    String name;
-    double rating;
-    double price;
-    double discount;
-    List<String> roomAmenenties;
+    private String name;
+    private double rating;
+    private double price;
+    private double discount;
+    private List<String> roomAmenenties;
 }

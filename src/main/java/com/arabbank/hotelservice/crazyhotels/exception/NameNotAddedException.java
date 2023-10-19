@@ -10,6 +10,6 @@ public class NameNotAddedException extends Exception{
         this.message=message;
     }
     public String printError(){
-        return "Enter Proper Name!";
+        return " Name not valid or already exist!";
     }
 }

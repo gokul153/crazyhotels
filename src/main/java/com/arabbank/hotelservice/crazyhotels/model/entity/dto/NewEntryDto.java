@@ -12,13 +12,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class NewEntryDto {
-    String city;
-    LocalDate fromDate;
-    LocalDate toDate;
-    int numberOfAdults;
-    String name;
-    String rating;
-    double price;
-    double discount;
-    List<String> roomAmenenties;
+    private String rid;
+    private String city;
+    private LocalDate fromDate;
+    private LocalDate toDate;
+    private int numberOfAdults;
+    private String name;
+    private String rating;
+    private double price;
+    private  double discount;
+    private List<String> roomAmenenties;
 }

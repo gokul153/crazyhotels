@@ -10,8 +10,8 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RequestDto {
-    String city;
-    LocalDate fromDate;
-   LocalDate toDate;
-    int noOfAdults;
+    private String city;
+    private LocalDate fromDate;
+    private LocalDate toDate;
+    private int noOfAdults;
 }

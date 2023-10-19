@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface CrazyHotelEntityRepo extends MongoRepository<CrazyHotelEntity ,String> {
     Optional<CrazyHotelEntity> findBycity(String s);
-   // Optional<CrazyHotelEntity> findByRid(String id);
-  //  Optional<CrazyHotelEntity> findByName(String name);
-
+   Optional<CrazyHotelEntity> findByRid(String id);
+  Optional<CrazyHotelEntity> findByName(String name);
+    void deleteHotelByRid(String rid);
 }

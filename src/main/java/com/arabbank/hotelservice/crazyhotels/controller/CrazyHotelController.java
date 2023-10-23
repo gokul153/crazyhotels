@@ -34,7 +34,7 @@ public class CrazyHotelController {
         return creationService.createNewEntry(newEntryDto);
     }
 
-    @GetMapping("/gethotel")
+    @GetMapping("/hotels")
     public List<ResponseDto> gethotel(@RequestParam String city, @RequestParam LocalDate fromDate, @RequestParam LocalDate toDate , @RequestParam int noOfAdults){
            RequestDto requestDto=new RequestDto();
            requestDto.setCity(city);

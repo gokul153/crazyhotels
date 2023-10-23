@@ -1,0 +1,132 @@
+[34m09:21:53.461[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 8596 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m09:21:53.464[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m09:21:54.034[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m09:21:54.079[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m09:21:54.532[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+[0;39m
+[34m09:21:54.538[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m09:21:54.539[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m09:21:54.540[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m09:21:54.626[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m09:21:54.627[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1099 ms
+[0;39m
+[34m09:21:54.848[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5b39a3e6, com.mongodb.Jep395RecordCodecProvider@5820070c]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m09:21:54.868[cluster-ClusterId{value='6531f95ae89c6631760b3d0f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19128600}
+[0;39m
+[34m09:21:55.778[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m09:21:55.822[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path '/crazyhotel'
+[0;39m
+[34m09:21:55.831[main] INFO  c.a.h.c.CrazyhotelsApplication - Started CrazyhotelsApplication in 2.929 seconds (process running for 3.482)
+[0;39m
+[34m09:22:50.620[http-nio-9090-exec-1] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m09:22:50.620[http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m09:22:50.621[http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[0;39m
+[39m09:22:50.686[http-nio-9090-exec-1] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m09:30:01.928[http-nio-9090-exec-3] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m09:42:50.532[http-nio-9090-exec-5] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[34m14:23:43.013[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 26668 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m14:23:43.016[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m14:23:43.568[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m14:23:43.611[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m14:23:44.033[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+[0;39m
+[34m14:23:44.039[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m14:23:44.040[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m14:23:44.041[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m14:23:44.117[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m14:23:44.118[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1050 ms
+[0;39m
+[34m14:23:44.261[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@67d32a54, com.mongodb.Jep395RecordCodecProvider@314a31b0]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m14:23:44.279[cluster-ClusterId{value='653240185ddbbf4cea440479', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18066200}
+[0;39m
+[34m14:23:45.166[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m14:23:45.196[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path '/crazyhotel'
+[0;39m
+[34m14:23:45.203[main] INFO  c.a.h.c.CrazyhotelsApplication - Started CrazyhotelsApplication in 2.654 seconds (process running for 2.941)
+[0;39m
+[34m14:24:03.067[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 2264 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m14:24:03.069[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m14:24:03.628[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m14:24:03.673[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m14:24:04.123[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+[0;39m
+[34m14:24:04.127[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m14:24:04.129[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m14:24:04.129[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m14:24:04.212[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m14:24:04.212[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1077 ms
+[0;39m
+[34m14:24:04.361[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@34208baa, com.mongodb.Jep395RecordCodecProvider@71370fec]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m14:24:04.382[cluster-ClusterId{value='6532402c17ad8507e41020d5', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20713300}
+[0;39m
+[34m14:24:05.166[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m14:24:05.210[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path '/crazyhotel'
+[0;39m
+[34m14:24:05.220[main] INFO  c.a.h.c.CrazyhotelsApplication - Started CrazyhotelsApplication in 2.588 seconds (process running for 2.869)
+[0;39m
+[34m14:24:17.392[http-nio-9090-exec-2] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m14:24:17.392[http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m14:24:17.393[http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[0;39m
+[39m14:24:17.432[http-nio-9090-exec-2] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-11-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-01-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m14:25:17.565[http-nio-9090-exec-5] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m14:25:36.052[http-nio-9090-exec-8] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-11-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-01-31T18:30:00Z"}}}], "city" : "TVC"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m14:25:45.534[http-nio-9090-exec-9] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-11-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-01-31T18:30:00Z"}}}], "city" : "TVR"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m14:26:01.741[http-nio-9090-exec-10] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-11-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-01-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m14:26:30.647[http-nio-9090-exec-2] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-11-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-01-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m14:28:17.473[http-nio-9090-exec-4] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m14:29:22.707[http-nio-9090-exec-6] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m14:31:15.466[http-nio-9090-exec-8] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m14:37:31.500[http-nio-9090-exec-1] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "name" : "NOVOTEL"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m14:37:38.085[http-nio-9090-exec-3] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "name" : "NOVOTEL"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m14:38:52.702[http-nio-9090-exec-5] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "name" : "NOVOTELhjkhk"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m

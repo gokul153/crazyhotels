@@ -458,3 +458,87 @@
 [0;39m
 [39m16:59:23.568[http-nio-9090-exec-8] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
 [0;39m
+[34m17:22:45.457[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 2528 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m17:22:45.460[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m17:22:45.998[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m17:22:46.034[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m17:22:46.462[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+[0;39m
+[34m17:22:46.468[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m17:22:46.469[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m17:22:46.469[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m17:22:46.539[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m17:22:46.540[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1027 ms
+[0;39m
+[34m17:22:46.686[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@67d32a54, com.mongodb.Jep395RecordCodecProvider@314a31b0]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m17:22:46.703[cluster-ClusterId{value='6531188ee15964099b682f5d', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16647300}
+[0;39m
+[34m17:22:47.504[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m17:22:47.544[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path '/crazyhotel'
+[0;39m
+[34m17:22:47.552[main] INFO  c.a.h.c.CrazyhotelsApplication - Started CrazyhotelsApplication in 2.475 seconds (process running for 2.758)
+[0;39m
+[34m17:23:02.036[http-nio-9090-exec-2] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m17:23:02.036[http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m17:23:02.039[http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[0;39m
+[39m17:23:02.256[http-nio-9090-exec-2] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "name" : "NOVOTEL"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m17:35:16.316[http-nio-9090-exec-3] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "rid" : "25b"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m17:35:16.331[http-nio-9090-exec-3] DEBUG o.s.data.mongodb.core.MongoTemplate - Remove using query: { "rid" : "25b"} in collection: crazyhotels.
+[0;39m
+[39m17:35:21.222[http-nio-9090-exec-5] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "name" : "NOVOTEL"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m17:35:21.242[http-nio-9090-exec-5] DEBUG o.s.data.mongodb.core.MongoTemplate - Inserting Document containing fields: [rid, city, fromDate, toDate, numberOfAdults, name, rating, price, discount, roomAmenenties, _class] in collection: crazyhotels
+[0;39m
+[39m17:53:37.602[http-nio-9090-exec-7] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERs"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m17:53:42.546[http-nio-9090-exec-8] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m17:53:52.385[http-nio-9090-exec-9] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : ""} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m17:53:57.452[http-nio-9090-exec-10] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m17:54:09.130[http-nio-9090-exec-1] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m17:54:16.804[http-nio-9090-exec-2] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m17:54:26.354[http-nio-9090-exec-4] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "3000-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m17:56:37.517[http-nio-9090-exec-5] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2023-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : ""} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m18:10:43.759[http-nio-9090-exec-7] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2023-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : ""} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m18:10:54.520[http-nio-9090-exec-8] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2023-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m18:11:18.767[http-nio-9090-exec-9] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m18:11:31.482[http-nio-9090-exec-10] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "3025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m18:11:33.577[http-nio-9090-exec-1] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "3025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m18:11:50.681[http-nio-9090-exec-4] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "3025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m18:12:19.695[http-nio-9090-exec-3] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "3025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m18:13:37.672[http-nio-9090-exec-6] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "3025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m18:15:15.797[http-nio-9090-exec-8] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m18:16:25.392[http-nio-9090-exec-10] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[39m18:19:12.193[http-nio-9090-exec-2] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-05-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-03-31T18:30:00Z"}}}], "city" : ""} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m

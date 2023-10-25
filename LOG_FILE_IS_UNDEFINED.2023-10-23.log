@@ -28,3 +28,513 @@
 [0;39m
 [34m12:01:39.879[main] INFO  c.a.h.c.CrazyhotelsApplication - Started CrazyhotelsApplication in 3.38 seconds (process running for 3.918)
 [0;39m
+[34m12:18:00.494[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 16688 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m12:18:00.496[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m12:18:01.194[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m12:18:01.240[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m12:18:01.787[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+[0;39m
+[34m12:18:01.791[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:18:01.792[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m12:18:01.792[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m12:18:01.881[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m12:18:01.881[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1330 ms
+[0;39m
+[34m12:18:02.067[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@67d32a54, com.mongodb.Jep395RecordCodecProvider@314a31b0]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m12:18:02.086[cluster-ClusterId{value='6536172262d01a39f1704918', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20637900}
+[0;39m
+[34m12:18:03.303[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[0;39m
+[31m12:18:03.312[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[0;39m
+[34m12:18:03.341[main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:18:03.342[main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[0;39m
+[34m12:18:03.364[main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:18:03.365[main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:18:03.375[main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[0;39m
+[1;31m12:18:03.426[main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+[0;39m
+[34m12:20:35.236[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 9940 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m12:20:35.239[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m12:20:35.887[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m12:20:35.927[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m12:20:36.486[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+[0;39m
+[34m12:20:36.491[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:20:36.493[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m12:20:36.493[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m12:20:36.587[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m12:20:36.587[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1293 ms
+[0;39m
+[34m12:20:36.771[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@11b32a14, com.mongodb.Jep395RecordCodecProvider@1c33e528]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m12:20:36.802[cluster-ClusterId{value='653617bca1f9552ed457a217', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=30874000}
+[0;39m
+[34m12:20:37.935[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[0;39m
+[31m12:20:37.946[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[0;39m
+[34m12:20:37.965[main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:20:37.966[main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[0;39m
+[34m12:20:37.985[main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:20:37.986[main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:20:37.997[main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[0;39m
+[1;31m12:20:38.042[main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+[0;39m
+[34m12:21:30.519[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 22824 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m12:21:30.522[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m12:21:31.173[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m12:21:31.217[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m12:21:31.802[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+[0;39m
+[34m12:21:31.807[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:21:31.808[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m12:21:31.809[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m12:21:31.905[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m12:21:31.905[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1315 ms
+[0;39m
+[34m12:21:32.084[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@53d2d002, com.mongodb.Jep395RecordCodecProvider@5b39a3e6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m12:21:32.107[cluster-ClusterId{value='653617f45b2a401dbc18c5be', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=24128000}
+[0;39m
+[34m12:21:33.249[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+[0;39m
+[31m12:21:33.259[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[0;39m
+[34m12:21:33.271[main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:21:33.272[main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[0;39m
+[34m12:21:33.297[main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:21:33.299[main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9090"]
+[0;39m
+[34m12:21:33.310[main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[0;39m
+[1;31m12:21:33.354[main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+[0;39m
+[34m12:21:46.142[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 3180 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m12:21:46.143[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m12:21:46.792[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m12:21:46.847[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m12:21:47.417[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+[0;39m
+[34m12:21:47.424[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+[0;39m
+[34m12:21:47.425[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m12:21:47.425[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m12:21:47.526[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m12:21:47.527[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1340 ms
+[0;39m
+[34m12:21:47.712[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@20d33ea, com.mongodb.Jep395RecordCodecProvider@73613ae5]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m12:21:47.746[cluster-ClusterId{value='65361803c2cdb36be9efec96', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=33556300}
+[0;39m
+[34m12:21:48.738[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+[0;39m
+[34m12:21:48.805[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9191 (http) with context path '/crazyhotel'
+[0;39m
+[34m12:21:48.822[main] INFO  c.a.h.c.CrazyhotelsApplication - Started CrazyhotelsApplication in 3.187 seconds (process running for 3.525)
+[0;39m
+[34m12:24:23.299[http-nio-9191-exec-1] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m12:24:23.299[http-nio-9191-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m12:24:23.301[http-nio-9191-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+[0;39m
+[39m12:24:23.364[http-nio-9191-exec-1] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-11-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-01-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[34m12:26:25.097[main] INFO  c.a.h.c.CrazyhotelsApplicationTests - Starting CrazyhotelsApplicationTests using Java 18 with PID 1016 (started by User in E:\crazyhotels)
+[0;39m
+[34m12:26:25.099[main] INFO  c.a.h.c.CrazyhotelsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m12:26:25.879[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m12:26:25.923[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m12:26:26.408[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@20c812c8, com.mongodb.Jep395RecordCodecProvider@71aaf151]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m12:26:26.436[cluster-ClusterId{value='6536191aef43fb18bd0a739f', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23830000}
+[0;39m
+[34m12:26:27.854[main] INFO  c.a.h.c.CrazyhotelsApplicationTests - Started CrazyhotelsApplicationTests in 3.067 seconds (process running for 3.953)
+[0;39m
+[39m12:59:32.070[http-nio-9191-exec-5] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-11-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-01-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[34m14:20:47.402[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 16712 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m14:20:47.404[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m14:20:48.078[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m14:20:48.120[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m14:20:48.722[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m14:20:48.727[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m14:20:48.729[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m14:20:48.729[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m14:20:48.809[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m14:20:48.810[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1321 ms
+[0;39m
+[31m14:20:48.893[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'crazyHotelController': Unsatisfied dependency expressed through field 'crazyHotelService': Error creating bean with name 'crazyHotelService': Unsatisfied dependency expressed through field 'crazyHotelEntityrepo': Error creating bean with name 'crazyHotelEntityRepo' defined in com.arabbank.hotelservice.crazyhotels.repository.CrazyHotelEntityRepo defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'
+[0;39m
+[34m14:20:48.897[main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[0;39m
+[34m14:20:48.906[main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[0;39m
+[1;31m14:20:48.921[main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field crazyHotelEntityrepo in com.arabbank.hotelservice.crazyhotels.service.AddedService required a bean named 'mongoTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'mongoTemplate' in your configuration.
+
+[0;39m
+[34m14:21:07.734[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 15356 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m14:21:07.736[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m14:21:08.346[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m14:21:08.380[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m14:21:08.979[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m14:21:08.984[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m14:21:08.985[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m14:21:08.985[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m14:21:09.075[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m14:21:09.076[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1273 ms
+[0;39m
+[31m14:21:09.148[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'crazyHotelController': Unsatisfied dependency expressed through field 'crazyHotelService': Error creating bean with name 'crazyHotelService': Unsatisfied dependency expressed through field 'crazyHotelEntityrepo': Error creating bean with name 'crazyHotelEntityRepo' defined in com.arabbank.hotelservice.crazyhotels.repository.CrazyHotelEntityRepo defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'
+[0;39m
+[34m14:21:09.152[main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[0;39m
+[34m14:21:09.162[main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[0;39m
+[1;31m14:21:09.184[main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field crazyHotelEntityrepo in com.arabbank.hotelservice.crazyhotels.service.AddedService required a bean named 'mongoTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'mongoTemplate' in your configuration.
+
+[0;39m
+[34m14:21:22.896[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 18524 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m14:21:22.898[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m14:21:23.528[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m14:21:23.566[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m14:21:24.202[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m14:21:24.206[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m14:21:24.207[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m14:21:24.207[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m14:21:24.301[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m14:21:24.301[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1348 ms
+[0;39m
+[34m14:21:24.526[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@34208baa, com.mongodb.Jep395RecordCodecProvider@71370fec]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m14:21:24.549[cluster-ClusterId{value='6536340c9a715a6b14609e65', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22889000}
+[0;39m
+[34m14:21:25.588[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[31m14:21:25.599[main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[0;39m
+[34m14:21:25.622[main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m14:21:25.623[main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[0;39m
+[34m14:21:25.645[main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m14:21:25.647[main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m14:21:25.657[main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[0;39m
+[1;31m14:21:25.695[main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[0;39m
+[34m14:21:44.323[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 22060 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m14:21:44.329[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m14:21:44.945[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m14:21:44.985[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m14:21:45.501[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m14:21:45.506[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m14:21:45.508[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m14:21:45.508[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m14:21:45.587[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m14:21:45.588[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1191 ms
+[0;39m
+[34m14:21:45.772[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@53d2d002, com.mongodb.Jep395RecordCodecProvider@5b39a3e6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m14:21:45.801[cluster-ClusterId{value='65363421e3a0b6121db3cc9b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=29174300}
+[0;39m
+[34m14:21:46.765[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m14:21:46.827[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/crazyhotel'
+[0;39m
+[34m14:21:46.840[main] INFO  c.a.h.c.CrazyhotelsApplication - Started CrazyhotelsApplication in 2.922 seconds (process running for 3.23)
+[0;39m
+[34m14:21:54.654[http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m14:21:54.655[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m14:21:54.656[http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[0;39m
+[39m14:21:54.702[http-nio-8080-exec-1] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-11-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-01-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[34m15:32:52.437[main] INFO  c.a.h.c.CrazyhotelsApplicationTests - Starting CrazyhotelsApplicationTests using Java 18 with PID 3004 (started by User in E:\crazyhotels)
+[0;39m
+[34m15:32:52.438[main] INFO  c.a.h.c.CrazyhotelsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m15:32:53.173[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m15:32:53.220[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m15:32:53.721[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@f557c37, com.mongodb.Jep395RecordCodecProvider@1a01d7f0]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m15:32:53.751[cluster-ClusterId{value='653644cd3434545e1c9ec8da', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23979300}
+[0;39m
+[34m15:32:55.235[main] INFO  c.a.h.c.CrazyhotelsApplicationTests - Started CrazyhotelsApplicationTests in 3.063 seconds (process running for 3.965)
+[0;39m
+[34m15:34:24.461[main] INFO  c.a.h.c.CrazyhotelsApplicationTests - Starting CrazyhotelsApplicationTests using Java 18 with PID 20180 (started by User in E:\crazyhotels)
+[0;39m
+[34m15:34:24.463[main] INFO  c.a.h.c.CrazyhotelsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m15:34:25.246[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m15:34:25.330[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m15:34:25.795[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@3e377967, com.mongodb.Jep395RecordCodecProvider@4dadd690]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m15:34:25.828[cluster-ClusterId{value='65364529d9744e0ba4fa299c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=26863000}
+[0;39m
+[34m15:34:27.236[main] INFO  c.a.h.c.CrazyhotelsApplicationTests - Started CrazyhotelsApplicationTests in 3.074 seconds (process running for 3.987)
+[0;39m
+[34m15:34:33.869[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 25112 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m15:34:33.877[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m15:34:34.639[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m15:34:34.685[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m15:34:35.235[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[0;39m
+[34m15:34:35.242[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m15:34:35.243[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m15:34:35.244[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m15:34:35.342[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m15:34:35.343[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1398 ms
+[0;39m
+[34m15:34:35.522[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@35c4697c, com.mongodb.Jep395RecordCodecProvider@104dc1a2]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m15:34:35.541[cluster-ClusterId{value='65364533a304b910a82c3d3a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18890800}
+[0;39m
+[34m15:34:36.436[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[0;39m
+[34m15:34:36.501[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/crazyhotel'
+[0;39m
+[34m15:34:36.512[main] INFO  c.a.h.c.CrazyhotelsApplication - Started CrazyhotelsApplication in 3.239 seconds (process running for 3.554)
+[0;39m
+[34m15:34:39.139[http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m15:34:39.140[http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m15:34:39.141[http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[0;39m
+[39m15:34:39.198[http-nio-8080-exec-2] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-11-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-01-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m
+[34m15:41:39.902[main] INFO  c.a.h.c.CrazyhotelsApplication - Starting CrazyhotelsApplication using Java 18 with PID 3492 (E:\crazyhotels\target\classes started by User in E:\crazyhotels)
+[0;39m
+[34m15:41:39.907[main] INFO  c.a.h.c.CrazyhotelsApplication - No active profile set, falling back to 1 default profile: "default"
+[0;39m
+[34m15:41:40.573[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+[0;39m
+[34m15:41:40.624[main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 1 MongoDB repository interfaces.
+[0;39m
+[34m15:41:41.100[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9191 (http)
+[0;39m
+[34m15:41:41.109[main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+[0;39m
+[34m15:41:41.110[main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[0;39m
+[34m15:41:41.110[main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+[0;39m
+[34m15:41:41.199[main] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring embedded WebApplicationContext
+[0;39m
+[34m15:41:41.200[main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1226 ms
+[0;39m
+[34m15:41:41.391[main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18+36-2087"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1c33e528, com.mongodb.Jep395RecordCodecProvider@5df63359]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[0;39m
+[34m15:41:41.417[cluster-ClusterId{value='653646dd3f691a15096e66cc', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27324900}
+[0;39m
+[34m15:41:42.508[main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+[0;39m
+[34m15:41:42.574[main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9191 (http) with context path '/crazyhotel'
+[0;39m
+[34m15:41:42.585[main] INFO  c.a.h.c.CrazyhotelsApplication - Started CrazyhotelsApplication in 3.1 seconds (process running for 3.415)
+[0;39m
+[34m15:41:50.415[http-nio-9191-exec-1] INFO  o.a.c.c.C.[.[.[/crazyhotel] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m
+[34m15:41:50.415[http-nio-9191-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[0;39m
+[34m15:41:50.416[http-nio-9191-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[0;39m
+[39m15:41:50.456[http-nio-9191-exec-1] DEBUG o.s.data.mongodb.core.MongoTemplate - find using query: { "$and" : [{ "toDate" : { "$lte" : { "$date" : "2025-11-19T18:30:00Z"}}}, { "fromDate" : { "$gte" : { "$date" : "2023-01-31T18:30:00Z"}}}], "city" : "ERN"} fields: Document{{}} for class: class com.arabbank.hotelservice.crazyhotels.model.entity.CrazyHotelEntity in collection: crazyhotels
+[0;39m

@@ -53,4 +53,8 @@ public class CrazyHotelController {
        // return crazyHotelService.deleteBYRid(rid);
         return crazyHotelDelectionService.deleteBYRid(rid);
     }
+    @GetMapping("/test")
+    public String respondTo(){
+        return  "Testing valid";
+    }
 }

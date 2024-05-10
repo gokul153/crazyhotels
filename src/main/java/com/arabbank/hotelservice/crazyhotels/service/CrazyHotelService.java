@@ -30,12 +30,12 @@ public class CrazyHotelService extends AddedService{
 
      public List<ResponseDto> searchByRequest(RequestDto requestDto){
          Query query=new Query();
-         Criteria criteria =new Criteria()
-                 .andOperator(
-                         (Criteria.where("toDate").lte(requestDto.getToDate())),
-                         Criteria.where("fromDate").gte(requestDto.getFromDate())
-                 );
-         query.addCriteria(criteria);
+//         Criteria criteria =new Criteria()
+//                 .andOperator(
+//                         (Criteria.where("toDate").lte(requestDto.getToDate())),
+//                         Criteria.where("fromDate").gte(requestDto.getFromDate())
+//                 );
+//         query.addCriteria(criteria);
          query.addCriteria(Criteria.where("city").is(requestDto.getCity()));
 
          List<CrazyHotelEntity> crazyHotelEntityList =mongoTemplate.find(query,CrazyHotelEntity.class);

@@ -35,12 +35,12 @@ public class CrazyHotelController {
     }
 
     @GetMapping("/hotels")
-    public List<ResponseDto> gethotel(@RequestParam String city, @RequestParam LocalDate fromDate, @RequestParam LocalDate toDate , @RequestParam int noOfAdults){
+    public List<ResponseDto> gethotel(@RequestParam String city){
            RequestDto requestDto=new RequestDto();
            requestDto.setCity(city);
-           requestDto.setToDate(toDate);
-           requestDto.setNoOfAdults(noOfAdults);
-           requestDto.setFromDate(fromDate);
+//           requestDto.setToDate(LocalDate.ofEpochDay(2023-10-15));
+//           requestDto.setNoOfAdults(1);
+//           requestDto.setFromDate(LocalDate.(2023-01-15));
 
            return crazyHotelService.searchByRequest(requestDto);
     }

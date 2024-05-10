@@ -23,9 +23,6 @@ public class CrazyHotelCreationService extends AddedService{
             crazyHotelEntity.setToDate(newEntryDto.getToDate());
             crazyHotelEntity.setPrice(newEntryDto.getPrice());
             crazyHotelEntity.setRid(newEntryDto.getRid());
-            if (newEntryDto.getName() == null||checkExist(newEntryDto.getName())||newEntryDto.getName().length()<1) {
-                throw new NameNotAddedException();
-            }
 
             crazyHotelEntity.setName(newEntryDto.getName());
             crazyHotelEntity.setNumberOfAdults(newEntryDto.getNumberOfAdults());
